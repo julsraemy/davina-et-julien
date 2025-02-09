@@ -27,8 +27,12 @@ main {
   margin: 0 auto;
 }
 main h1 {
+  margin-bottom: 3rem;
+  font-size: clamp(2.5rem, 5vw, 3rem);
+}
+main h2 {
   margin-bottom: 2rem;
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
 }
 main p {
   margin: 1rem 0;

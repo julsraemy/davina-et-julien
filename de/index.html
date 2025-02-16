@@ -14,10 +14,6 @@
 <body>
   <main>
     <h1>Hochzeit von Davina und Julien</h1>
-    <figure style="text-align: center;">
-        <img src="../assets/images/engagement.jpg" alt="Photo prise par Cécilia Hofer" style="width: 35%; display: block; margin: 0 auto;">
-        <figcaption style="font-style: italic; margin-top: 10px;">© <a href="https://www.ceciliahofer.ch/" target="_blank">Cécilia Hofer</a></figcaption>
-    </figure>
     <p>Willkommen auf unserer Hochzeitsseite! Wir freuen uns sehr, die Details dieses besonderen Tages mit Euch zu teilen und hoffen, viele von Euch bei der Feier begrüssen zu können. Unsere Hochzeit findet am <b>Samstag, den 21. Juni 2025 um 16 Uhr</b> in Pont-de-Thielle (Zihlbrücke 15, 3238 Gals) statt, wo es einen grossen Parkplatz gibt und das relativ nahe am Bahnhof <i>Zihlbrücke</i> in Gampelen liegt.</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.9529780307103!2d7.0343669!3d47.021528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e0ec13f68b187%3A0x4cf48ee0ff7ca316!2sHotel%20%26%20Eventlocation%20Pont-de-Thielle!5e0!3m2!1sen!2sch!4v1737895846322!5m2!1sen!2sch" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p>16 Uhr: Willkommens-Cocktail<br/>16:30 Uhr: Beginn der Zeremonie<br/>17:15 Uhr: Aperitif<br/>19:30 Uhr: Abendessen<br/>Mitternacht: Party &#127881;</p>
@@ -26,6 +22,22 @@
     <p>Eure Anwesenheit bei unserer Hochzeit ist das schönste Geschenk, das wir uns wünschen können, und das macht uns bereits glücklich. 
       Wenn ihr jedoch auf einfache Weise zu unserer Hochzeitsreise beitragen möchtet, könnt ihr eine Überweisung auf das folgende Konto tätigen: <br/> Julien Raemy und Davina Barbezat, 3067 Boll, IBAN CH71 8080 8006 4622 2961 8</p>
   </main>
+  <figure style="text-align: center;">
+    <div id="openseadragoncontainer"></div>
+    <figcaption style="font-style: italic; margin-top: 10px;">
+        © <a href="https://www.ceciliahofer.ch/" target="_blank">Cécilia Hofer</a>
+    </figcaption>
+</figure>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/openseadragon.min.js"></script>
+<script>
+    window.onload = function() {
+        var viewer = OpenSeadragon({
+            id: "openseadragoncontainer",
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/images/",
+            tileSources: "https://julsraemy.ch/hostiiing/images/engagement/info.json"
+        });
+    };
+</script>
   <nav>
     <a href="../fr/">FR</a>
     <a href="../pt/">PT</a>

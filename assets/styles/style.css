@@ -64,6 +64,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  font-size: 2rem;
 }
 
 nav a {

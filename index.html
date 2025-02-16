@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <title>Mariage de Davina et Julien</title>
-  <link rel="stylesheet" href="./assets/styles/style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Mariage de Davina et Julien</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
 </head>
 <body>
     <h1>Mariage de Davina et Julien</h1>
     <figure style="text-align: center;">
-      <div id="openseadragoncontainer" style="width: 400px; height: 300px;"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/5.0.1/openseadragon.min.js"></script>
-<script type="text/javascript">
-    var viewer = OpenSeadragon({
-        id: "openseadragoncontainer", //this id matches the container id
-        prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/5.0.1/images",
-        sequenceMode: true,
-        tileSources: [
-          "https://julsraemy.ch/hostiiing/images/engagement/info.json",
-        ]
-    });
-</script>
-      <figcaption style="font-style: italic; margin-top: 10px;">© <a href="https://www.ceciliahofer.ch/" target="_blank">Cécilia Hofer</a></figcaption>
+        <div id="openseadragoncontainer"></div>
+        <figcaption style="font-style: italic; margin-top: 10px;">
+            © <a href="https://www.ceciliahofer.ch/" target="_blank">Cécilia Hofer</a>
+        </figcaption>
     </figure>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/openseadragon.min.js"></script>
+    <script>
+        window.onload = function() {
+            var viewer = OpenSeadragon({
+                id: "openseadragoncontainer",
+                prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/images/",
+                tileSources: "https://julsraemy.ch/hostiiing/images/engagement/info.json"
+            });
+        };
+    </script>
     <h2><a href="./fr/">Français</a></h2>
     <h2><a href="./pt/">Português</a></h2>
     <h2><a href="./de/">Deutsch</a></h2>
